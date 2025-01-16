@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Предсказание следующего слова в последовательности</title>
+   </head>
+   <body>
+       <h1>Предсказание следующего слова в последовательности с помощью RNN</h1>
+       <form action="/predict" method="post">
+           <label for="input_text">Введите последовательность:</label>
+           <input type="text" id="input_text" name="input_text" required>
+           <button type="submit">Предсказать</button>
+       </form>
+       <div id="prediction"></div>
+   </body>
+   </html>
