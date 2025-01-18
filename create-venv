@@ -1,0 +1,27 @@
+#1
+conda create --name venv python=3.9
+#2
+conda activate venv
+#3
+pip install Flask
+#4
+from flask import Flask
+
+   app = Flask(__name__)
+
+   @app.route('/')
+   def home():
+       return "Hello, Flask!"
+
+   if __name__ == '__main__':
+       app.run(debug=True)
+#5
+python app.py
+
+# PowerShell
+#1
+python -m venv venv
+#2
+.\venv\Scripts\Activate
+#3
+pip install Flask
